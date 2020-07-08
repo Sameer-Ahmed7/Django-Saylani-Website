@@ -1,0 +1,90 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<style>
+body {
+    
+    background-image: url("../static/5.jpg");
+}
+
+
+</style>
+
+<body>
+    
+{% for message in messages %}
+	<div class="alert alert-{{ message.tags}} text-center" role="alert" id="msg">
+        <b> {{message}}</b>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+     </div>
+	
+	
+	  
+	{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+    <br>
+
+<div class="row justify-content-center mt-5">
+	<aside class="col-sm-4">
+
+<div class="card">
+
+    <header class="card-header">
+<a href="signup" class="float-right btn btn-outline-primary">Sign up</a>
+<h4 class="card-title mt-2">Sign in</h4>
+</header>
+<article class="card-body">
+	 <form action="" method="post">
+         {% csrf_token %}
+    <div class="form-group">
+    	<label>Your email</label>
+        <input class="form-control" name="username" placeholder="User Name" type="text">
+    </div> <!-- form-group// -->
+    <div class="form-group">
+    	
+    	<label>Your password</label>
+        <input class="form-control" placeholder="******" type="password" name="password">
+    </div> <!-- form-group// --> 
+    <div class="form-group"> 
+    <div class="checkbox">
+      <label> <input type="checkbox"> Save password </label>
+    </div> <!-- checkbox .// -->
+    </div> <!-- form-group// -->  
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Login  </button>
+    </div> <!-- form-group// -->                                                           
+</form>
+</article>
+</div> <!-- card.// -->
+</aside>
+</div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+
+    setTimeout(function(){
+          if ($('#msg').length > 0) {
+            $('#msg').remove();
+          }
+        }, 4000)
+    </script>
