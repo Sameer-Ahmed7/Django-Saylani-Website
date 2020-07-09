@@ -8,7 +8,7 @@ In this dynamic website i added 3 pages.
 
 In this pages i add some functionality 
 
-##1. Sign Up Page
+## 1. Sign Up Page
 <ul>
   <li> <b> If the person add same email that be added previously in database then it's show this error</b></li>
   <br/>
@@ -23,7 +23,7 @@ In this pages i add some functionality
   <img src="https://github.com/Sameer-Ahmed7/Django-Saylani-Website/blob/master/signup_userCreated.PNG" alt="User creatid">
  </ul>
  
- ##2. Sign In Page
+ ## 2. Sign In Page
  <ul>
   <li> <b> If the person add wrong username and password then it's show this error</b></li>
   <br/>
@@ -32,7 +32,7 @@ In this pages i add some functionality
   </ul>
   
   
-  ##3. Home Page
+  ## 3. Home Page
   <ul>
   <li> <b> If the person add correct username and password then it's succefully login to home page</b></li>
  <br/>
