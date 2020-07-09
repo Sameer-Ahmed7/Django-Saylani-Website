@@ -14,7 +14,7 @@ def signIn(request):
         if user is not None:
             
             auth.login(request,user)
-            messages.success(request,"Welcome "+username+" ")
+            messages.success(request,"Logout "+username+" ")
             return render(request,"index.html")
         else:
             messages.warning(request,"Invalid Credential")
