@@ -42,3 +42,7 @@ In this pages i add some functionality
   <img src="https://github.com/Sameer-Ahmed7/Django-Saylani-Website/blob/master/logout_person.PNG" alt="Sign Out">
   <br/>
   </ul>
+  
+  # Final Result
+  <b> Click this image to run the final video </b>
+[![Watch the video](https://github.com/Sameer-Ahmed7/Django-Saylani-Website/blob/master/Capture.PNG)](https://drive.google.com/file/d/1avJrkc8Mlo6ayxMH5B4FyP9W3jxq1Ih5/preview)
